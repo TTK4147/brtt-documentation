@@ -3,6 +3,8 @@ Butterfly Response-Time Tester (version 4)
 
 The BRTT is a 3-channel latency tester for 5V devices, developed for use in the exercises in TTK4147.
 
+This is the guide for BRTT with v4 firmware. For older versions, consult [older versions documentation](./brtt-documentation/ButterflyReal-TimeTester-v3.pdf).
+
 The response time is a measure of the time it takes a device to respond to an incoming pin change (*from* the BRTT) with a pin change of its own (*to* the BRTT). Since the BRTT is external to the device being tested, it will not add any disturbances like a self-test would (like from extra CPU usage), and also measures any hardware-level pin I/O delays. 
 
 The BRTT can test up to three independent channels, where each channel is a pair of *test* and *response* pins. It can also perform several tests in rapid succession, and reports all results as text over a serial port.
